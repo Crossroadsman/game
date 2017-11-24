@@ -1,5 +1,17 @@
 from enum import Enum
 
+class Direction(Enum):
+    # syntax is MEMBER_NAME = value
+    # name can be accessed using <thing>.name
+    # value can be accessed using <thing>.value
+    NORTH = "north"
+    EAST = "east"
+    SOUTH = "south"
+    WEST = "west"
+
+
+
+
 
 class Player:
 
@@ -12,11 +24,3 @@ class Player:
         return value + 1
 
 
-class Direction(Enum):
-    # syntax is MEMBER_NAME = value
-    # name can be accessed using <thing>.name
-    # value can be accessed using <thing>.value
-    NORTH = "north"
-    EAST = "east"
-    SOUTH = "south"
-    WEST = "west"
