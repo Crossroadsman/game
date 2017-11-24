@@ -15,7 +15,10 @@ class Direction(Enum):
 
 class Player:
 
-    def move(self, direction: Direction):
+    def move(self, *, direction: Direction):
+        if not isinstance(direction, Direction):
+            raise TypeError('direction must be of type Direction')
+
         print("moving in direction: {}".format(direction.value))
         
     # the following is just an example of type hinting in practice
