@@ -40,6 +40,7 @@ class Dice:
         while len(flips) < n:
             flips.append( self.coin_flip(heads=heads, tails=tails) )
         return flips
+    
 
 
 if __name__ == "__main__":
@@ -85,3 +86,12 @@ if __name__ == "__main__":
     sides = 10
     print("specified 'n': {}, and 'sides': {}".format(n, sides))
     print(dice.sum_rolls(n=n, sides=sides))
+    
+    
+    print("~~~ testing coin_flip() ~~~")
+    print("no args: should be either 'heads' or 'tails'")
+    print(dice.coin_flip())
+
+    n = 3
+    print("specified 'n': {}".format(n))
+    print(dice.coin_flips(n=n))
