@@ -27,6 +27,19 @@ class Dice:
         for element in rolls:
             sum_so_far += element
         return sum_so_far
+    
+    def coin_flip(heads="heads", tails="tails"):
+        result = random.randint(0, 1)
+        if result == 0:
+            return heads
+        if result == 1:
+            return tails
+    
+    def coin_flips(n, heads="heads", tails="tails"):
+        flips = []
+        while len(flips) < n:
+            flips.append( self.coin_flip(heads=heads, tails=tails) )
+        return flips
 
 
 if __name__ == "__main__":
