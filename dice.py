@@ -92,6 +92,16 @@ if __name__ == "__main__":
     print("no args: should be either 'heads' or 'tails'")
     print(dice.coin_flip())
 
+    
+    print("~~~ testing coin_flips() ~~~")
+    print("no args: should be either ['heads'] or ['tails']")
+    print(dice.coin_flips())
+    
     n = 3
     print("specified 'n': {}".format(n))
     print(dice.coin_flips(n=n))
+    
+    heads = 'H'
+    tails = 'T'
+    print("specified 'heads': {} and 'tails': {}".format(heads, tails))
+    print(dice.coin_flips(heads=heads, tails=tails))
